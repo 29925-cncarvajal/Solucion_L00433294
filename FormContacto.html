@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Contacto PARTE III</title>
+    <meta name="viewport" content="width=device-width, user-scaleble=no,
+    initial-scale=1, maximum-scale=1,minimum-scale=1">
+
+    <link rel="stylesheet" href="./css/estilocontact.css">
+
+    <script src="./js/script.js"></script>
+  </head>
+
+<body>
+    <form action="#" method="post" name="FormContacto" class="FormContactoEnviado" onsubmit="return validar();">
+      <h2>Contacto</h2>
+      <p>Correo Electronico</p>
+      <input type="text" id="txtEmail" name="txtEmail" placeholder="&#9993; usuario@mail.com" required>
+      <p>Fecha de Nacimiento</p>
+      <input type="date"  name="txtFecha">
+      <p>Teléfono</p>
+      <input type="text" id="txtTelefono" name="txtTelefono" placeholder="&#9742; Telefono" required>
+      <input type="submit" id="btnEnviar" value="Enviar"
+        onclick="validar(); if(this.form.checkValidity()){ this.disabled=true; this.value='Enviando datos ……....'; this.form.submit(); } else { this.form.reportValidity(); }">
+    </form>
+</body>
+
+</html>
