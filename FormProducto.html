@@ -14,13 +14,13 @@
         <fieldset>
             <legend>Datos Básicos</legend>
             <label for="nombreProducto">Nombre del Producto:</label>
-            <input type="text" id="nombreProducto" name="nombreProducto"><br><br>
+            <input type="text" id="nombreProducto" name="nombreProducto" autofocus required><br><br>
 
             <label for="descripcion">Descripción:</label>
-            <textarea id="descripcion" name="descripcion"></textarea><br><br>
+            <textarea id="descripcion" name="descripcion" maxlength="50" required></textarea><br><br>
 
             <label for="foto">Foto:</label>
-            <input type="file" id="foto" name="foto"><br><br>
+            <input type="file" id="foto" name="foto" required><br><br>
 
             <input type="checkbox" id="infoconfidencial">
             <label for="infoconfidencial">Añadir información confidencial</label><br><br>
@@ -29,13 +29,15 @@
         <fieldset id="datosEconomicos">
             <legend>Datos Económicos</legend>
             <label for="precio">Precio:</label>
-            <input type="number" id="precio" name="precio"><br><br>
+            <input type="number" id="precio" name="precio" min="100" max="200" required><br><br>
 
             <label for="impuestos">Impuestos:</label>
             <select id="impuestos" name="impuestos">
                 <option value="4">4%</option>
                 <option value="8">8%</option>
                 <option value="12">12%</option>
+                <option value="16">16%</option>
+  				<option value="25">25%</option>
             </select><br><br>
 
             <label>Promoción:</label><br>

@@ -14,9 +14,11 @@
         <fieldset>
         <legend>Dirección de Envío</legend>
         <label for="calle">Calle Principal:</label>
+        <br>
         <input type="text" id="calle" name="calle" required><br><br>
 
         <label for="transversal">Transversal:</label>
+        <br>
         <input type="text" id="transversal" name="transversal" required><br><br>
 
         <input type="radio" id="entregaPropietario" name="entrega" value="propietario" onclick="toggleEnvio()" required> Entrega al Propietario<br><br>
@@ -45,9 +47,10 @@
             <fieldset>
             <legend>Información Confidencial</legend>
             <label for="codigo-postal">Código Postal:</label>
-            <input type="text" id="codigo-postal" name="codigo-postal" required><br><br>
+            <input type="password" id="codigo-postal" name="codigo-postal" required><br><br>
 
             <label for="referencia">Referencia de la Dirección:</label>
+            <br>
             <textarea id="referencia" name="referencia" required></textarea><br><br>
 
             <button type="button" onclick="guardarConfidencial()">Guardar</button>
